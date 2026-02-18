@@ -819,6 +819,7 @@ p {
 .audio {
     display: block;
     margin: 20px auto;
+    width: 100%;
 }
 .listening_answer {
     display: flex;
@@ -893,4 +894,5 @@ p {
 
 .text_finish {
     text-align: center;
+
 }
