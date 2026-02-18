@@ -819,7 +819,7 @@ p {
 .audio {
     display: block;
     margin: 20px auto;
-    width: 80%;
+    width: 60%;
 }
 .listening_answer {
     display: flex;
@@ -831,13 +831,13 @@ p {
 .finish_video {
     display: block;
     margin: 20px auto;
-    width: 80%;
+    width: 60%;
 }
 
 .begin_video {
     display: block;
     margin: 20px auto;
-    width: 80%;
+    width: 60%;
 }
 
 .stretch {
@@ -906,4 +906,5 @@ p {
 
 .text_finish {
     text-align: center;
+
 }
