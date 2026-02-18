@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 3</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 3</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q3">
+        <p>Wie gross darf das Logo in Pixel sein für digitale Medien?</p>
+        <div class="px_output" id="px_output"></div>
+        <div class="slider_px">
+            <input type="range" min="0" max="200" value="100" class="slider" id="q3_slider_px" oninput="updatePxOutput()">
+            <img class="logo_santis_q3_px" src="../media/SANTIS_Quadrat.png" alt="SANTIS Quadrat">
+        </div>
+        <div class="spacer-vertical-tall"></div>
+        <p>Wie gross darf das Logo in Millimeter sein für Druckmedien?</p>
+        <div class="mm_output" id="mm_output"></div>
+        <div class="slider_mm">
+            <input type="range" min="0" max="50" value="25" class="slider" id="q3_slider_mm" oninput="updateMmOutput()">
+            <img class="logo_santis_q3_mm" src="../media/SANTIS_Quadrat.png" alt="SANTIS Quadrat">
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q2"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_4"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 12 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 9</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 9</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q9">
+        <p class="text_q9">Wähle die richtigen Formate für Dateien aus:</p>
+        <div class="spacer-vertical-tall"></div>
+        <div class="dropdownContainer">
+            <div class="dropdown2">
+                <p class="Menu2">Für interne Drucke</p>
+                <button onclick="Menu2()" class="dropdownBtn2">Interne Druckformate
+                </button>
+                <div class="dropdownMenu2" id="dropdownMenu2">
+                    <a href="#" onclick="selectOption2('.png')">.png</a>
+                    <a href="#" onclick="selectOption2('.gif')">.gif</a>
+                    <a href="#" onclick="selectOption2('.jpg')">.jpg</a>
+                    <a href="#" onclick="selectOption2('.svg')">.svg</a>
+                    <a href="#" onclick="selectOption2('.pdf')">.pdf</a>
+                    <a href="#" onclick="selectOption2('.eps')">.eps</a>
+                    <a href="#" onclick="selectOption2('.tiff')">.tiff</a>
+                    <a href="#" onclick="selectOption2('.ai')">.ai</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q8"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_10"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 19 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

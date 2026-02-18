@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 5</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 5</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q5">
+        <div class="text_q5_container">
+            <p class="text_q5">Welches Pantone wird für das Santis Logo verwendet?</p>
+        </div>
+        <br>
+        <div class="container_pantone_q5"> 
+            <label for="option_296C"><img class="pantone_1" src="../media/pantone_296_c.png" alt="Pantone 296 C"></label>
+            <label for="option_655C"><img class="pantone_2" src="../media/pantone_655_c.png" alt="Pantone 655 C"></label>
+            <label for="option_282C"><img class="pantone_3" src="../media/pantone_282_c.png" alt="Pantone 282 C"></label>
+            <label for="option_281C"><img class="pantone_4" src="../media/pantone_281_c.png" alt="Pantone 281 C"></label>
+            <input type="radio" name="pantone" value="296C" id="option_296C" class="pantone_radio">
+            <input type="radio" name="pantone" value="655C" id="option_655C" class="pantone_radio">
+            <input type="radio" name="pantone" value="282C" id="option_282C" class="pantone_radio">
+            <input type="radio" name="pantone" value="281C" id="option_281C" class="pantone_radio">
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q4"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_6"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 14 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

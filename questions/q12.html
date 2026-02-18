@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 12</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 12</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q12">
+        <p class="text_q12">Welche Bilder entsprechen dem CD?</p>
+        <br>
+        <div class="container_q12">
+            <label class="checkbox_12" for="option1_12"><img class="pic1" src="../media/andrea-davis-04G19lnpHcc-unsplash.jpg"></label>
+            <label class="checkbox_12" for="option2_12"><img class="pic2" src="../media/charles-forerunner-3fPXt37X6UQ-unsplash.jpg"></label>
+            <label class="checkbox_12" for="option3_12"><img class="pic3" src="../media/dylan-gillis-KdeqA3aTnBY-unsplash.jpg"></label>
+            <label class="checkbox_12" for="option4_12"><img class="pic4" src="../media/jud-mackrill-Of_m3hMsoAA-unsplash.jpg"></label>
+
+            <input type="checkbox" id="option1_12" name="option1" value="pic1" class="checkbox_12">
+            <input type="checkbox" id="option2_12" name="option2" value="pic2" class="checkbox_12">
+            <input type="checkbox" id="option3_12" name="option3" value="pic3" class="checkbox_12">
+            <input type="checkbox" id="option4_12" name="option4" value="pic4" class="checkbox_12">
+       
+            <label class="checkbox_12" for="option5_12"><img class="pic5" src="../media/lycs-architecture-aKij95Mmus8-unsplash.jpg"></label>
+            <label class="checkbox_12" for="option6_12"><img class="pic6" src="../media/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"></label>
+            <label class="checkbox_12" for="option7_12"><img class="pic7" src="../media/redd-francisco-5U_28ojjgms-unsplash.jpg"></label>
+            <label class="checkbox_12" for="option8_12"><img class="pic8" src="../media/sable-flow-T74mVg__F_k-unsplash.jpg"></label>
+
+            <input type="checkbox" id="option5_12" name="option5" value="pic5" class="checkbox_12">
+            <input type="checkbox" id="option6_12" name="option6" value="pic6" class="checkbox_12">
+            <input type="checkbox" id="option7_12" name="option7" value="pic7" class="checkbox_12">
+            <input type="checkbox" id="option8_12" name="option8" value="pic8" class="checkbox_12">
+        </div>
+        <br>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q11"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_listening"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 24 und 25 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 7</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 7</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q7">
+        <div class="drag_and_drop santisfont">
+            <p class="text_q7">Welche Schriften darf man für Dateien verbunden mit Santis verwenden?</p>
+            <br>
+            <div class="dropzones_font">
+                <div class="dropzone_font dzf1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="dropzone2_1"><span id="span" class="placeholder">Überschriften-Font</span></div>
+                <div class="dropzone_font dzf2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="dropzone2_2"><span id="span" class="placeholder">Text-Font</span></div>
+            </div>
+            <div class="spacer-vertical-tall"></div>
+            <div class="drag-container_font">
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_1"><span id="font1" class="draggable_font drag_and_drop_font verdana" ondragstart="dragstartHandler(event)" draggable="true">Verdana</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_2"><span id="font2" class="draggable_font drag_and_drop_font arial" ondragstart="dragstartHandler(event)" draggable="true">Arial</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_3"><span id="font3" class="draggable_font drag_and_drop_font times_new_roman" ondragstart="dragstartHandler(event)" draggable="true">Times New Roman</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_4"><span id="font4" class="draggable_font drag_and_drop_font calibri" ondragstart="dragstartHandler(event)" draggable="true">Calibri</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_5"><span id="font5" class="draggable_font drag_and_drop_font courier" ondragstart="dragstartHandler(event)" draggable="true">Courier</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_6"><span id="font6" class="draggable_font drag_and_drop_font gill_sans" ondragstart="dragstartHandler(event)" draggable="true">Gill Sans</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_7"><span id="font7" class="draggable_font drag_and_drop_font georgia" ondragstart="dragstartHandler(event)" draggable="true">Georgia</span></div>
+                <div class="dropzone_font" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="element2_8"><span id="font8" class="draggable_font drag_and_drop_font palatino_linotype" ondragstart="dragstartHandler(event)" draggable="true">Palatino Linotype</span></div>
+            </div>
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q6"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_8"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 21 und 22 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

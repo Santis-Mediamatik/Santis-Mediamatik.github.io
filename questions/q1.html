@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 1</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 1</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q1">
+        <p class="text_q1">Was sind die Hauptaufgaben des SANTIS-Logo? Mehrere Antworten möglich.</p>
+        <br>
+        <div class="container_q1">
+            <input type="checkbox" id="option1" name="option1" value="Deko" class="checkbox_1">
+            <label class="checkbox_1" for="option1">Dekoration</label><br>
+            <div class="spacer-vertical"></div>
+            <input type="checkbox" id="option2" name="option2" value="Sichtbarkeit" class="checkbox_1">
+            <label class="checkbox_1" for="option2">Sichtbarkeit</label><br>
+            <div class="spacer-vertical"></div>
+            <input type="checkbox" id="option3" name="option3" value="Wiedererkennung" class="checkbox_1">
+            <label class="checkbox_1" for="option3">Wiedererkennung</label><br>
+            <div class="spacer-vertical"></div>
+            <input type="checkbox" id="option4" name="option4" value="Interne Dokumente" class="checkbox_1">
+            <label class="checkbox_1" for="option4">Für interne Dokumente</label><br>
+            <div class="spacer-vertical"></div>
+            <input type="checkbox" id="option5" name="option5" value="Flexible Gestaltung" class="checkbox_1">
+            <label class="checkbox_1" for="option5">Flexible Gestaltung, nach Wunsch der jeweiligen Abteilung</label><br>
+            <div class="spacer-vertical"></div>
+            <input type="checkbox" id="option6" name="option6" value="Symbol" class="checkbox_1">
+            <label class="checkbox_1" for="option6">Symbol für Einheit und Qualität</label>
+        </div>
+        <br>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_start"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_2"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 5 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

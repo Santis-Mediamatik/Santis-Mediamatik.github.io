@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 11</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 11</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q11">
+        <div class="text_q11_container">
+            <p class="text_q11">Welche Email-Vorlage entspricht dem CD der Santis?</p>
+        </div>
+        <br>
+        <div class="container_email_q11"> 
+            <label for="option_A"><img class="email_1" src="../media/mockup_abwesenheitsmail_santis_falsch_1.jpg" alt="Vorlage A"></label>
+            <label for="option_B"><img class="email_2" src="../media/mockup_abwesenheitsmail_santis_falsch_2.jpg" alt="Vorlage B"></label>
+            <label for="option_C"><img class="email_3" src="../media/mockup_abwesenheitsmail_santis_korrekt.jpg" alt="Vorlage C"></label>
+            <label for="option_D"><img class="email_4" src="../media/mockup_abwesenheitsmail_santis_falsch_3.jpg" alt="Vorlage D"></label>
+            <input type="radio" name="email_vorlage" id="option_A" class="email_radio">
+            <input type="radio" name="email_vorlage" id="option_B" class="email_radio">
+            <input type="radio" name="email_vorlage" id="option_C" class="email_radio">
+            <input type="radio" name="email_vorlage" id="option_D" class="email_radio">
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q10"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_12"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 31 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 10</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 10</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q10">
+        <div>
+            <p class="text_q10">Wähle alle CD-gültigen Farbkombinationen des Santis Logos aus.</p>
+        </div>
+        <div class="spacer-vertical-tall">
+        </div>
+        <div class="wrap10">
+            <div class="half10">
+                <div class="colorPicker10">
+                </div>
+            </div>
+            <div class="half-readout10">
+                <span class="title">Selected Color:</span>
+                <div id="values10">
+                </div>
+                <div class="hex10">
+                    <input id="hexInput10" style="outline: none;border: 0;"></input>
+                    <div class="show10">
+                        <div class="show10_1"></div>
+                        <div class="show10_2"></div>
+                        <div class="show10_3"></div>
+                        <div class="show10_4"></div>
+                    </div>
+                    <div onclick="bgButton()" onmouseenter="bgHover()" onmouseleave="bgAntiHover()" class="logo_preview10">
+                        <img onmouseenter="LogoHover10()" onmouseleave="LogoAntiHover10()" onclick="LogoButton10()" class="logo_image10" src="../media/SANTIS_Logo_2026_White.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q9"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_11"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Klicken Sie auf die weisse Fläche mit blauer Umrandung neben den 4 Punkten.</p>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 16 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

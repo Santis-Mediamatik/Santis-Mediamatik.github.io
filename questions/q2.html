@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 2</title>
+</head>
+
+<body>
+    <header class="header">
+        
+        <h1>Frage 2</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q2">
+        <div class="drag_and_drop santislogo">
+            <p class="text_q2">Ordnen Sie die Elemente des SANTIS-Logos korrekt zu.</p>
+            <br>
+            <div class="dropzones">
+                <div class="dropzone dz1" data-accepts="logo" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="dropzone1"><span id="span" class="placeholder">Logo</span></div>
+                <div class="text_q2">
+                    <div class="dropzone dz2" data-accepts="text" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="dropzone2"><span id="span" class="placeholder">Text Feld</span></div>
+                    <div class="dropzone dz3" data-accepts="text" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="dropzone3"><span id="span" class="placeholder">Text Feld</span></div>
+                    <div class="dropzone dz4" data-accepts="text" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="dropzone4"><span id="span" class="placeholder">Text Feld</span></div>
+                </div>
+            </div>
+            <div class="spacer-vertical-tall"></div>
+            <div class="drag-container">
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element1"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img1" class="draggable drag_and_drop_logo" src="../media/ALLPOWER_Quadrat.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element2"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img2" class="draggable drag_and_drop_logo" src="../media/ALLUDO_quadrat.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element3"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img3" class="draggable drag_and_drop_logo" src="../media/B2B_quadrat.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element4"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img4" class="draggable drag_and_drop_logo" src="../media/SANTIBOOK_quadrat.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element5"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img5" class="draggable drag_and_drop_logo" src="../media/SANTIFIT_Quadrat.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element6"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img6" class="draggable drag_and_drop_logo" src="../media/SANTIS_Quadrat.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="logo" id="element7"><img data-type="logo" draggable="true" ondragstart="dragstartHandler(event)" id="img7" class="draggable drag_and_drop_logo" src="../media/SANTIS_Quadrat_verein.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element8"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img8" class="draggable drag_and_drop_schrift" src="../media/ALLPOWER_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element9"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img9" class="draggable drag_and_drop_schrift" src="../media/ALLUDO_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element10"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img10" class="draggable drag_and_drop_schrift" src="../media/b2b_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element11"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img11" class="draggable drag_and_drop_schrift" src="../media/SANTIBOOK_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element12"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img12" class="draggable drag_and_drop_schrift" src="../media/SANTIFIT_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element13"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img13" class="draggable drag_and_drop_hauptschrift" src="../media/SANTIS_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element14"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img14" class="draggable drag_and_drop_schrift" src="../media/TRAINING_schirft.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element15"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img15" class="draggable drag_and_drop_hauptschrift" src="../media/VEREIN_SCHRIFT_Santis.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element16"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img16" class="draggable drag_and_drop_schrift" src="../media/VEREIN_schrift.png"></div>
+                <div class="div-container dropzone" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" data-accepts="text" id="element17"><img data-type="text" draggable="true" ondragstart="dragstartHandler(event)" id="img17" class="draggable drag_and_drop_claim" src="../media/claim_santis.png"></div>
+            </div>
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q1"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_3"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 6 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>

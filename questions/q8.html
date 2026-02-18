@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5824af4a98.js" crossorigin="anonymous"></script>
+    <title>Quiz CI/CD SANTIS - Frage 8</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../media/SANTIS_Logo_2026_RGB.png" alt="SANTIS Logo">
+        <h1>Frage 8</h1>
+        <div class="top">
+        </div>
+    </header>
+    <div class="spacer_top">
+    </div>
+    <main class="quiz q8">
+        <div class="text_q8s_container">
+            <p class="text_q8">Welcher Font darf bei nicht-vorhandener Arial Schriftart verwendet werden?</p>
+        </div>
+        <div class="spacer-vertical-tall">
+        </div>
+        <div class="spacer-vertical">
+        </div>
+        <div class="container_font_q8"> 
+            <label for="option_tahoma"><span class="font_ersatz tahoma">Tahoma</span></label>
+            <label for="option_calibri"><span class="font_ersatz calibri">Calibri</span></label>
+            <label for="option_helvetica"><span class="font_ersatz helvetica">Helvetica</span></label>
+            <label for="option_gill_sans"><span class="font_ersatz gill_sans">Gill Sans</span></label>
+            <input type="radio" name="font" value="tahoma" id="option_tahoma" class="font_radio">
+            <input type="radio" name="font" value="calibri" id="option_calibri" class="font_radio">
+            <input type="radio" name="font" value="helvetica" id="option_helvetica" class="font_radio">
+            <input type="radio" name="font" value="gill_sans" id="option_gill_sans" class="font_radio">
+        </div>
+        <div class="notes hidden" id="notes">
+            <textarea id="notes_area" placeholder="Hier können Sie sich Notizen machen..."></textarea>
+        </div>
+    </main> 
+    <footer class="footer">
+        <i class="fa-regular fa-clipboard" id="notes_button"></i>
+        <i class="fa-solid fa-angle-left" id="back_to_q7"></i>
+        <i class="fa-solid fa-chevron-right" id="forward_9"></i>
+        <i class="fa-regular fa-circle-question" id="showHelp"></i>
+        <div id="pop_up_message_help_start" class="help-popup" style="display: none;">
+            <div class="help-popup-content">
+                <span class="close-btn" onclick="closeHelp()">&times;</span>
+                <p class="help-text">Diese Informationen finden Sie auf Seite 20 des aktuellen Manuals.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom"></div>
+    <div class="bottom2"></div>
+</body>
+</html>
